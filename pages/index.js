@@ -19,7 +19,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={`${sora.variable} font-sans bg-white px-10`}>
-          <section className="min-h-screen">
+          <section>
             <nav className="py-10 mb-6 flex justify-between">
               <h1 className="text-xl font-bold mt-1">Joseph Soto</h1>
               <ul className="flex items-center hidden lg:flex">
@@ -36,28 +36,30 @@ export default function Home() {
                 href="mailto:josephsoto684@gmail.com"
                 className="flex items-center  hidden lg:flex"><AiOutlineMail />
                 <span className="p-2 text-sm">josephsoto684@gmail.com</span></a>
-                <div className="flex items-center text-3xl lg:hidden"><HiOutlineMenu/></div>
+                <div className="flex items-center text-3xl lg:hidden cursor-pointer"><HiOutlineMenu/></div>
 
             </nav>
-            <div className="text-center p-10">
-              <h2 className="text-4xl font-medium py-2 text-teal-600">Hi, I'm Joseph Soto</h2>
-              <h3 className="text-2xl font-medium py-2">I build things for the web.</h3>
-              <p className="text-md py-5 leading-8 text-grey-800">I'm a software engineer based in Mesa, AZ specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</p>
-            </div>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
-                <a
-                  href="https://github.com/sotojn"
-                  target="_blank"><FaGithub /></a>
-                <a
-                href="https://www.linkedin.com/in/joseph-soto66/"
-                target="_blank"><FaLinkedin /></a>
-                <a
-                href="https://www.youtube.com/@josephsoto66"
-                target="_blank"><FaYoutube /></a>
-            </div>
-            <div>
+            </section>
+            <section className="max-h-screen overflow-y-scroll scrollbar-hide">
 
-            </div>
+              <section id="Home">
+                <div className="text-center p-10">
+                  <h2 className="text-4xl font-medium py-2 text-teal-600">Hi, I'm Joseph Soto</h2>
+                  <h3 className="text-2xl font-medium py-2">I build things for the web.</h3>
+                  <p className="text-md py-5 leading-8 text-grey-800">I'm a software engineer based in Mesa, AZ specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</p>
+                </div>
+                <div className="text-5xl flex justify-center gap-16 py-3 text-gray-300">
+                  <a
+                    href="https://github.com/sotojn"
+                    target="_blank"><FaGithub /></a>
+                  <a
+                  href="https://www.linkedin.com/in/joseph-soto66/"
+                  target="_blank"><FaLinkedin /></a>
+                  <a
+                  href="https://www.youtube.com/@josephsoto66"
+                  target="_blank"><FaYoutube /></a>
+                </div>
+              </section>
           </section>
         </main>
       </div>
