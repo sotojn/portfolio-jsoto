@@ -4,7 +4,8 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import { FaGithub, FaLinkedin, FaYoutube, } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiOutlineMenu } from 'react-icons/hi';
-import { Sora } from 'next/font/google'
+import { Sora } from 'next/font/google';
+import NavBar from '../components/NavBar.js';
 
  const sora = Sora({
   subsets: ['latin'],
@@ -18,29 +19,9 @@ export default function Home() {
           <meta name="description" content="Joseph Soto Portfolio" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className={`${sora.variable} font-sans bg-white px-10`}>
-          <section>
-            <nav className="py-10 mb-6 flex justify-between">
-              <h1 className="text-xl font-bold mt-1">Joseph Soto</h1>
-              <ul className="flex items-center hidden lg:flex">
-                {/* <li><BsFillMoonStarsFill className="cursor-pointer"/></li>
-                <li><a className="bg-gradient-to-r from-teal-400 via-blue-500 to-blue-500 text-white px-4 py-2 rounded-md ml-4"
-                href="#">Resume</a></li> */}
-                <li className="px-4 py-2 cursor-pointer">Home</li>
-                <li className="px-4 py-2 cursor-pointer">About</li>
-                <li className="px-4 py-2 cursor-pointer">Projects</li>
-                <li className="px-4 py-2 cursor-pointer">Contact</li>
-                <li className="px-4 py-2 cursor-pointer">Blog</li>
-              </ul>
-                <a
-                href="mailto:josephsoto684@gmail.com"
-                className="flex items-center  hidden lg:flex"><AiOutlineMail />
-                <span className="p-2 text-sm">josephsoto684@gmail.com</span></a>
-                <div className="flex items-center text-3xl lg:hidden cursor-pointer"><HiOutlineMenu/></div>
-
-            </nav>
-            </section>
-            <section className="max-h-screen overflow-y-scroll scrollbar-hide">
+        <main className={`${sora.variable} font-sans bg-white`}>
+            <NavBar />
+            <section className="max-h-screen overflow-y-scroll scrollbar-hide pt-24">
 
               <section id="Home">
                 <div className="text-center p-10">
