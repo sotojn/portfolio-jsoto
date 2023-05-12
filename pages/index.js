@@ -9,6 +9,7 @@ import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiTailwindcss, SiN
 import { Sora } from 'next/font/google';
 import NavBar from '../components/NavBar.js';
 
+
  const sora = Sora({
   subsets: ['latin'],
   variable: '--font-sora',
