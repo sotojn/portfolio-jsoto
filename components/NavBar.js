@@ -13,26 +13,26 @@ function NavBar() {
   }
 
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-white">
+    <nav className="fixed w-full h-24 shadow-xl bg-white z-20">
       <div className="flex justify-between items-center h-full px-4 2xl:px-16">
         <h1 className="text-xl font-bold">Joseph Soto</h1>
         <div>
-          {/* Here is the menu displayed when there is a screen that is at least large */}
+          {/* Here is the menu displayed when there is a screen that large or greater */}
           <ul className="hidden lg:flex">
             <Link href="#Home">
-              <li className="ml-10 text-lg">Home</li>
+              <li className="ml-5 text-lg px-4 py-2 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"><span className="w-0 h-0 rounded bg-black absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span><span className="w-full p-text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">Home</span></li>
             </Link>
             <Link href="#About">
-              <li className="ml-10 text-lg">About</li>
+              <li className="ml-5 text-lg px-4 py-2 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"><span className="w-0 h-0 rounded bg-black absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span><span className="w-full p-text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">About</span></li>
             </Link>
             <Link href="#Projects">
-              <li className="ml-10 text-lg">Projects</li>
+              <li className="ml-5 text-lg px-4 py-2 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"><span className="w-0 h-0 rounded bg-black absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span><span className="w-full p-text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">Projects</span></li>
             </Link>
             <Link href="#Contact">
-              <li className="ml-10 text-lg">Contact</li>
+              <li className="ml-5 text-lg px-4 py-2 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"><span className="w-0 h-0 rounded bg-black absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span><span className="w-full p-text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">Contact</span></li>
             </Link>
             <Link href="#Blog">
-              <li className="ml-10 text-lg">Blog</li>
+              <li className="ml-5 text-lg px-4 py-2 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"><span className="w-0 h-0 rounded bg-black absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span><span className="w-full p-text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">Blog</span></li>
             </Link>
           </ul>
         </div>
@@ -46,8 +46,8 @@ function NavBar() {
       </div>
       <div className={
         menuOpen
-        ? "fixed right-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-        : "fixed right-[-100%] top-0 p-10 h-screen ease-in duration-500"
+        ? "fixed right-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 z-30 ease-in duration-500"
+        : "fixed right-[-100%] top-0 p-10 z-30 h-screen ease-in duration-500"
       }>
         <div className="flex w-full items-center">
           <div onClick={handleNav} className="cursor-pointer text-3xl">
