@@ -50,9 +50,9 @@ export default function Home() {
 
               <section id="Home">
                 <div className="text-center p-5 lg:p-20">
-                  <h2 className="text-5xl font-medium py-8 text-teal-600">Hi, I'm Joseph Soto</h2>
+                  <h2 className="text-5xl font-medium py-8 text-teal-600">Hi, I&apos;m Joseph Soto</h2>
                   <h3 className="text-3xl font-medium py-2">I build things for the web.</h3>
-                  <h3 className="text-md py-5 leading-8 text-grey-800 mb-10 lg:text-xl">I'm a software engineer based in Mesa, AZ specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</h3>
+                  <h3 className="text-md py-5 leading-8 text-grey-800 mb-10 lg:text-xl">I&apos;m a software engineer based in Mesa, AZ specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</h3>
                   <button className="btn relative inline-flex items-center justify-start overflow-hidden text-white transition-all bg-teal-500 font-bold rounded hover:bg-white group">
                     <span className="w-0 h-0 rounded bg-black absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
                     <span className="w-full p-text-black py-4 px-8 transition-colors duration-300 ease-in-out group-hover:text- z-10"><a href="#Contact" >Get In Touch</a></span>
@@ -85,8 +85,8 @@ export default function Home() {
                     <div className="text-center lg:text-left">
                       <h3 className="text-2xl font-medium py-2">A programming legend from Mesa Arizona</h3>
                       <p className="text-md py-5 leading-8 text-grey-800"> I am a full stack developer based in Mesa, Arizona. I am passionate about bringing ideas to life on the screen, and I am constantly looking for ways to improve my skills and knowledge.</p>
-                      <p className="text-md py-5 leading-8 text-grey-800">I am currently working as a freelance software engineer on <a href="https://www.upwork.com/freelancers/~012975d21ca06ed41c?viewMode=1" target="_blank" className="text-teal-600">Upwork</a> where I work on a variety of Full-Stack projects for clients. I am also a graduate of Hack Reactor's 12 week immersive program!</p>
-                      <p className="text-md py-5 leading-8 text-grey-800">When I'm not in front of a computer screen, I'm probably out with friends or family, playing chess, or out trying new things! Also I like causal gaming.</p>
+                      <p className="text-md py-5 leading-8 text-grey-800">I am currently working as a freelance software engineer on <a href="https://www.upwork.com/freelancers/~012975d21ca06ed41c?viewMode=1" target="_blank" className="text-teal-600">Upwork</a> where I work on a variety of Full-Stack projects for clients. I am also a graduate of Hack Reactor&apos;s 12 week immersive program!</p>
+                      <p className="text-md py-5 leading-8 text-grey-800">When I&apos;m not in front of a computer screen, I&apos;m probably out with friends or family, playing chess, or out trying new things! Also I like causal gaming.</p>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Home() {
                     </Swiper>
                     </div>
                     <h3 className="text-xl font-medium py-4 flex justify-center items-center">A Custom Web Ecommerce Store</h3>
-                    <p className="text-sm"><span className="font-bold text-md">Description: </span>Perfect Dark is a powerful, custom-built ecommerce platform designed to streamline your online shopping experience. Developed using the cutting-edge <span className="text-teal-700">React framework</span> and hosted on <span className="text-teal-700">AWS through an EC2</span> instance, Perfect Dark is built for speed, efficiency, and performance. Whether you're a buyer or seller, Perfect Dark offers a user-friendly interface that is both intuitive and visually appealing. </p>
+                    <p className="text-sm"><span className="font-bold text-md">Description: </span>Perfect Dark is a powerful, custom-built ecommerce platform designed to streamline your online shopping experience. Developed using the cutting-edge <span className="text-teal-700">React framework</span> and hosted on <span className="text-teal-700">AWS through an EC2</span> instance, Perfect Dark is built for speed, efficiency, and performance. Whether you&apos;re a buyer or seller, Perfect Dark offers a user-friendly interface that is both intuitive and visually appealing. </p>
                     <p className="py-4"><span className="font-bold">Technologies Used:</span> HTML, CSS, JavaScript, React, Node.js, Express, Amazon Web Services</p>
                     <div className="flex justify-center items-center">
                       <Link href="https://github.com/perFECt-dark/Front-End-Capstone" target="_blank" className="flex justify-center items-center bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded"><FaGithub size={25}/>&nbsp; Github Repo</Link>
