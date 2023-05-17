@@ -12,6 +12,7 @@ import { SiJavascript, SiHtml5, SiCss3,
   SiMysql, SiExpress , SiAmazonaws, SiFirebase } from 'react-icons/si';
 import { Sora } from 'next/font/google';
 import NavBar from '../components/NavBar.js';
+import Contact from '../components/Contact.js';
 /// All Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCoverflow, EffectCards } from 'swiper';
@@ -191,8 +192,9 @@ export default function Home() {
                   <div className="p-10">
                     <h2 className="text-4xl font-medium py-2 text-teal-600 text-center lg:text-left">Contact</h2>
                   </div>
-                  <div className="flex justify-center items-center">
-                  </div>
+                  {/* <div className="flex justify-center items-center"> */}
+                    <Contact/>
+                  {/* </div> */}
                 </section>
           </section>
         </main>
