@@ -1,113 +1,57 @@
-[debug] [2023-05-17T20:20:19.036Z] ----------------------------------------------------------------------
-[debug] [2023-05-17T20:20:19.038Z] Command:       /home/sotojn/.nvm/versions/node/v16.17.0/bin/node /home/sotojn/PersonalProjects/portfolio-jsoto/node_modules/.bin/firebase --debug emulators:start
-[debug] [2023-05-17T20:20:19.038Z] CLI Version:   12.0.0
-[debug] [2023-05-17T20:20:19.039Z] Platform:      linux
-[debug] [2023-05-17T20:20:19.039Z] Node Version:  v16.17.0
-[debug] [2023-05-17T20:20:19.039Z] Time:          Wed May 17 2023 13:20:19 GMT-0700 (Mountain Standard Time)
-[debug] [2023-05-17T20:20:19.040Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T21:06:28.549Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T21:06:28.552Z] Command:       /home/sotojn/.nvm/versions/node/v16.17.0/bin/node /home/sotojn/PersonalProjects/portfolio-jsoto/node_modules/.bin/firebase init hosting:github
+[debug] [2023-05-17T21:06:28.552Z] CLI Version:   12.0.0
+[debug] [2023-05-17T21:06:28.552Z] Platform:      linux
+[debug] [2023-05-17T21:06:28.552Z] Node Version:  v16.17.0
+[debug] [2023-05-17T21:06:28.553Z] Time:          Wed May 17 2023 14:06:28 GMT-0700 (Mountain Standard Time)
+[debug] [2023-05-17T21:06:28.553Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-05-17T20:20:19.125Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-05-17T20:20:19.126Z] > authorizing via signed-in user (josephsoto684@gmail.com)
-[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
-[debug] [2023-05-17T20:20:19.142Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5033}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2023-05-17T20:20:19.188Z] [hub] writing locator at /tmp/hub-jsotowebsite.json
-[debug] [2023-05-17T20:20:19.226Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite [none]
-[debug] [2023-05-17T20:20:19.668Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite 200
-[debug] [2023-05-17T20:20:19.669Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite {"projectId":"jsotowebsite","projectNumber":"944684080291","displayName":"jsotoWebsite","name":"projects/jsotowebsite","resources":{"hostingSite":"jsotowebsite"},"state":"ACTIVE","etag":"1_67ded91a-0377-4eea-8333-635815328866"}
-[debug] [2023-05-17T20:20:22.863Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsotowebsite/sites pageToken=&pageSize=10
-[debug] [2023-05-17T20:20:23.227Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsotowebsite/sites 200
-[debug] [2023-05-17T20:20:23.228Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsotowebsite/sites {"sites":[{"name":"projects/jsotowebsite/sites/jsotowebsite","defaultUrl":"https://jsotowebsite.web.app","appId":"1:944684080291:web:45527e88ff36dc0b7db316","type":"DEFAULT_SITE"}]}
-[debug] [2023-05-17T20:20:23.230Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:944684080291:web:45527e88ff36dc0b7db316/config [none]
-[debug] [2023-05-17T20:20:24.008Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:944684080291:web:45527e88ff36dc0b7db316/config 200
-[debug] [2023-05-17T20:20:24.009Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:944684080291:web:45527e88ff36dc0b7db316/config {"projectId":"jsotowebsite","appId":"1:944684080291:web:45527e88ff36dc0b7db316","storageBucket":"jsotowebsite.appspot.com","apiKey":"AIzaSyCTQdl9BhGXSE09nByHV5XIDrjEkkPu8dc","authDomain":"jsotowebsite.firebaseapp.com","messagingSenderId":"944684080291","measurementId":"G-X4NLFT4TGC"}
-[debug] [2023-05-17T20:20:47.083Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5033}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
-[debug] [2023-05-17T20:20:47.109Z] defaultcredentials: writing to file /home/sotojn/.config/firebase/josephsoto684_gmail_com_application_default_credentials.json
-[debug] [2023-05-17T20:20:47.460Z] Setting GAC to /home/sotojn/.config/firebase/josephsoto684_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/sotojn/.config/firebase/josephsoto684_gmail_com_application_default_credentials.json"}}
-[debug] [2023-05-17T20:20:47.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite/adminSdkConfig [none]
-[debug] [2023-05-17T20:20:47.979Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite/adminSdkConfig 200
-[debug] [2023-05-17T20:20:47.979Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite/adminSdkConfig {"projectId":"jsotowebsite","storageBucket":"jsotowebsite.appspot.com"}
-[debug] [2023-05-17T20:20:53.690Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsotowebsite/sites 
-[debug] [2023-05-17T20:20:54.244Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsotowebsite/sites 200
-[debug] [2023-05-17T20:20:54.244Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsotowebsite/sites {"sites":[{"name":"projects/jsotowebsite/sites/jsotowebsite","defaultUrl":"https://jsotowebsite.web.app","appId":"1:944684080291:web:45527e88ff36dc0b7db316","type":"DEFAULT_SITE"}]}
-[debug] [2023-05-17T20:20:54.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite/webApps/1:944684080291:web:45527e88ff36dc0b7db316/config [none]
-[debug] [2023-05-17T20:20:54.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite/webApps/1:944684080291:web:45527e88ff36dc0b7db316/config 200
-[debug] [2023-05-17T20:20:54.777Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite/webApps/1:944684080291:web:45527e88ff36dc0b7db316/config {"projectId":"jsotowebsite","appId":"1:944684080291:web:45527e88ff36dc0b7db316","storageBucket":"jsotowebsite.appspot.com","apiKey":"AIzaSyCTQdl9BhGXSE09nByHV5XIDrjEkkPu8dc","authDomain":"jsotowebsite.firebaseapp.com","messagingSenderId":"944684080291","measurementId":"G-X4NLFT4TGC"}
-[info] i  hosting[jsotowebsite]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
-[info] ✔  hosting[jsotowebsite]: Local server: http://127.0.0.1:5033 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5033\u001b[22m\u001b[24m"}}
-[info] i  functions: Watching "/home/sotojn/PersonalProjects/portfolio-jsoto/.firebase/jsotowebsite/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/sotojn/PersonalProjects/portfolio-jsoto/.firebase/jsotowebsite/functions\" for Cloud Functions..."}}
-[debug] [2023-05-17T20:20:54.863Z] Validating nodejs source
-[debug] [2023-05-17T20:20:59.062Z] > [functions] package.json contents: {
-  "main": "server.js",
-  "dependencies": {
-    "firebase-frameworks": "^0.10.1",
-    "firebase-functions": "^4.3.0",
-    "firebase-admin": "^11.0.1"
-  },
-  "engines": {
-    "node": "16"
-  }
-}
-[debug] [2023-05-17T20:20:59.062Z] Building nodejs source
-[debug] [2023-05-17T20:20:59.063Z] Failed to find version of module node: reached end of search path /home/sotojn/PersonalProjects/portfolio-jsoto/.firebase/jsotowebsite/functions/node_modules
-[info] ✔  functions: Using node@16 from host. 
-[info] i  functions: Loaded environment variables from .env. 
-[debug] [2023-05-17T20:20:59.070Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-05-17T20:20:59.079Z] Found firebase-functions binary at '/home/sotojn/PersonalProjects/portfolio-jsoto/.firebase/jsotowebsite/functions/node_modules/.bin/firebase-functions'
-[debug] [2023-05-17T20:20:59.774Z] Serving at port 8086
-
-[debug] [2023-05-17T20:21:00.289Z] Got response from /__/functions.yaml {"endpoints":{"ssrjsotowebsite":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrjsotowebsite"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2023-05-17T20:21:00.304Z] shutdown requested via /__/quitquitquit
-
-[info] ✔  functions: Loaded functions definitions from source: ssrjsotowebsite. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ssrjsotowebsite."}}
-[info] ✔  functions[us-central1-ssrjsotowebsite]: http function initialized (http://127.0.0.1:5001/jsotowebsite/us-central1/ssrjsotowebsite). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/jsotowebsite/us-central1/ssrjsotowebsite)."}}
+[debug] [2023-05-17T21:06:28.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T21:06:28.628Z] > authorizing via signed-in user (josephsoto684@gmail.com)
 [info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-└─────────────────────────────────────────────────────────────┘
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
 
-┌───────────┬────────────────┐
-│ Emulator  │ Host:Port      │
-├───────────┼────────────────┤
-│ Functions │ 127.0.0.1:5001 │
-├───────────┼────────────────┤
-│ Hosting   │ 127.0.0.1:5033 │
-└───────────┴────────────────┘
-  Emulator Hub running at 127.0.0.1:4400
-  Other reserved ports: 4500
+You're about to initialize a Firebase project in this directory:
 
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:25 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:25 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/media/e409345220cc128b-s.p.woff2 HTTP/1.1" 200 32104 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/media/e409345220cc128b-s.p.woff2 HTTP/1.1\" 200 32104 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/chunks/webpack.js?ts=1684354885823 HTTP/1.1" 200 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/chunks/webpack.js?ts=1684354885823 HTTP/1.1\" 200 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/chunks/react-refresh.js?ts=1684354885823 HTTP/1.1" 200 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/chunks/react-refresh.js?ts=1684354885823 HTTP/1.1\" 200 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/development/_buildManifest.js?ts=1684354885823 HTTP/1.1" 200 296 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/development/_buildManifest.js?ts=1684354885823 HTTP/1.1\" 200 296 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/development/_ssgManifest.js?ts=1684354885823 HTTP/1.1" 200 76 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/development/_ssgManifest.js?ts=1684354885823 HTTP/1.1\" 200 76 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/chunks/pages/_app.js?ts=1684354885823 HTTP/1.1" 200 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/chunks/pages/_app.js?ts=1684354885823 HTTP/1.1\" 200 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:26 +0000] "GET /_next/static/chunks/main.js?ts=1684354885823 HTTP/1.1" 200 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:26 +0000] \"GET /_next/static/chunks/main.js?ts=1684354885823 HTTP/1.1\" 200 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:27 +0000] "GET /_next/static/chunks/pages/index.js?ts=1684354885823 HTTP/1.1" 200 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:27 +0000] \"GET /_next/static/chunks/pages/index.js?ts=1684354885823 HTTP/1.1\" 200 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:28 +0000] "GET /_next/static/development/_devMiddlewareManifest.json HTTP/1.1" 200 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:28 +0000] \"GET /_next/static/development/_devMiddlewareManifest.json HTTP/1.1\" 200 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:28 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:28 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:28 +0000] "GET /_next/static/webpack/5d25e9fcc8d7d733.webpack.hot-update.json HTTP/1.1" 200 31 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:28 +0000] \"GET /_next/static/webpack/5d25e9fcc8d7d733.webpack.hot-update.json HTTP/1.1\" 200 31 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:28 +0000] "GET /_next/static/webpack/webpack.5d25e9fcc8d7d733.hot-update.js HTTP/1.1" 200 858 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:28 +0000] \"GET /_next/static/webpack/webpack.5d25e9fcc8d7d733.hot-update.js HTTP/1.1\" 200 858 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:31 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FjsotoPicture.1268d16d.png&w=1920&q=75 HTTP/1.1" 200 48768 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:31 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FjsotoPicture.1268d16d.png&w=1920&q=75 HTTP/1.1\" 200 48768 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage1.18edeae1.png&w=1920&q=75 HTTP/1.1" 200 78582 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage1.18edeae1.png&w=1920&q=75 HTTP/1.1\" 200 78582 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage2.7c2f52b0.png&w=1920&q=75 HTTP/1.1" 200 74026 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage2.7c2f52b0.png&w=1920&q=75 HTTP/1.1\" 200 74026 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage3.5e3cab1f.png&w=1920&q=75 HTTP/1.1" 200 37560 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage3.5e3cab1f.png&w=1920&q=75 HTTP/1.1\" 200 37560 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage4.ad46d0a5.png&w=1920&q=75 HTTP/1.1" 200 47306 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage4.ad46d0a5.png&w=1920&q=75 HTTP/1.1\" 200 47306 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage5.9f826494.png&w=1920&q=75 HTTP/1.1" 200 39218 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage5.9f826494.png&w=1920&q=75 HTTP/1.1\" 200 39218 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage1.8408bffc.jpg&w=1920&q=75 HTTP/1.1" 200 34184 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage1.8408bffc.jpg&w=1920&q=75 HTTP/1.1\" 200 34184 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage2.0fd1a72e.jpg&w=1920&q=75 HTTP/1.1" 200 28316 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage2.0fd1a72e.jpg&w=1920&q=75 HTTP/1.1\" 200 28316 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage3.f73129f6.jpg&w=1920&q=75 HTTP/1.1" 200 26024 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage3.f73129f6.jpg&w=1920&q=75 HTTP/1.1\" 200 26024 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [17/May/2023:20:21:33 +0000] "GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage4.93cac78c.jpg&w=1920&q=75 HTTP/1.1" 200 37150 "http://127.0.0.1:5033/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [17/May/2023:20:21:33 +0000] \"GET /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage4.93cac78c.jpg&w=1920&q=75 HTTP/1.1\" 200 37150 \"http://127.0.0.1:5033/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36\""}}
-[debug] [2023-05-17T20:22:59.726Z] Received signal SIGINT (Ctrl-C) 1
-[info]  
-[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
-[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
-[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
-[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
-[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
-[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
-[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
-[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+  /home/sotojn/PersonalProjects/portfolio-jsoto
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-17T21:06:28.637Z] Using project from CLI flag: jsotowebsite
+[debug] [2023-05-17T21:06:28.641Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite [none]
+[debug] [2023-05-17T21:06:29.141Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite 200
+[debug] [2023-05-17T21:06:29.142Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsotowebsite {"projectId":"jsotowebsite","projectNumber":"944684080291","displayName":"jsotoWebsite","name":"projects/jsotowebsite","resources":{"hostingSite":"jsotowebsite"},"state":"ACTIVE","etag":"1_67ded91a-0377-4eea-8333-635815328866"}
+[info] i  Using project jsotowebsite (jsotoWebsite) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /home/sotojn/PersonalProjects/portfolio-jsoto 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=294713703&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-05-17T21:06:36.874Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-05-17T21:06:36.874Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-05-17T21:06:37.365Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-05-17T21:06:37.365Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-05-17T21:06:37.375Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-05-17T21:06:37.883Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-05-17T21:06:37.884Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"sotojn","id":112277899,"node_id":"U_kgDOBrE5iw","avatar_url":"https://avatars.githubusercontent.com/u/112277899?v=4","gravatar_id":"","url":"https://api.github.com/users/sotojn","html_url":"https://github.com/sotojn","followers_url":"https://api.github.com/users/sotojn/followers","following_url":"https://api.github.com/users/sotojn/following{/other_user}","gists_url":"https://api.github.com/users/sotojn/gists{/gist_id}","starred_url":"https://api.github.com/users/sotojn/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/sotojn/subscriptions","organizations_url":"https://api.github.com/users/sotojn/orgs","repos_url":"https://api.github.com/users/sotojn/repos","events_url":"https://api.github.com/users/sotojn/events{/privacy}","received_events_url":"https://api.github.com/users/sotojn/received_events","type":"User","site_admin":false,"name":"Joseph Soto","company":null,"blog":"","location":null,"email":"josephsoto66@gmail.com","hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2022-08-27T19:25:16Z","updated_at":"2023-04-03T21:49:00Z","private_gists":0,"total_private_repos":29,"owned_private_repos":0,"disk_usage":5741,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as sotojn 
+[info] 
