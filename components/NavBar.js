@@ -13,7 +13,7 @@ function NavBar() {
   }
 
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-white z-20">
+    <nav className="fixed w-full h-20 shadow-xl bg-white z-20 lg:h-24">
       <div className="flex justify-between items-center h-full px-4 2xl:px-16">
         <h1 className="text-xl font-bold">Joseph Soto</h1>
         <div>
