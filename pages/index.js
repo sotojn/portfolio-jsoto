@@ -78,6 +78,7 @@ export default function Home() {
                     <div className="p-2">
                       <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-1/2 h-1/2 overflow-hidden z-0 lg:w-2/3 lg:h-2/3">
                         <Image src={jsotoPic}
+                          priority
                         //layout="fill"
                         //objectFit="cover"
                         alt="Joseph portrait"/>
@@ -138,11 +139,11 @@ export default function Home() {
                       //pagination={{el:'',clickable:true}}
                       //navigation={{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev', clickable:true}}
                     >
-                      <SwiperSlide><Image src={Project_1_Slide_1} alt="Perfect Dark App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_1_Slide_2} alt="Perfect Dark App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_1_Slide_3} alt="Perfect Dark App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_1_Slide_4} alt="Perfect Dark App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_1_Slide_5} alt="Perfect Dark App" /></SwiperSlide>
+                      <SwiperSlide><Image src={Project_1_Slide_1} alt="Perfect Dark App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_1_Slide_2} alt="Perfect Dark App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_1_Slide_3} alt="Perfect Dark App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_1_Slide_4} alt="Perfect Dark App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_1_Slide_5} alt="Perfect Dark App" priority/></SwiperSlide>
                     </Swiper>
                     </div>
                     <h3 className="text-xl font-medium py-4 flex justify-center items-center">A Custom Web Ecommerce Store</h3>
@@ -172,10 +173,10 @@ export default function Home() {
                       //pagination={{el:'',clickable:true}}
                       //navigation={{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev', clickable:true}}
                     >
-                      <SwiperSlide><Image src={Project_2_Slide_1} alt="Sanctuary App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_2_Slide_2} alt="Sanctuary App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_2_Slide_3} alt="Sanctuary App" /></SwiperSlide>
-                      <SwiperSlide><Image src={Project_2_Slide_4} alt="Sanctuary App" /></SwiperSlide>
+                      <SwiperSlide><Image src={Project_2_Slide_1} alt="Sanctuary App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_2_Slide_2} alt="Sanctuary App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_2_Slide_3} alt="Sanctuary App" priority/></SwiperSlide>
+                      <SwiperSlide><Image src={Project_2_Slide_4} alt="Sanctuary App" priority/></SwiperSlide>
 
                     </Swiper>
                     </div>
