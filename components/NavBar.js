@@ -13,7 +13,7 @@ function NavBar() {
   }
 
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-white z-20">
+    <nav className="fixed w-full h-20 shadow-xl bg-white z-20 lg:h-24">
       <div className="flex justify-between items-center h-full px-4 2xl:px-16">
         <h1 className="text-xl font-bold">Joseph Soto</h1>
         <div>
@@ -46,8 +46,8 @@ function NavBar() {
       </div>
       <div className={
         menuOpen
-        ? "fixed right-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 z-30 ease-in duration-500"
-        : "fixed right-[-100%] top-0 p-10 z-30 h-screen ease-in duration-500"
+        ? "fixed right-0 top-0 w-[65%] lg:hidden h-screen bg-[#ecf0f3] p-10 z-30 ease-in duration-200"
+        : "fixed right-[-100%] top-0 p-10 z-30 h-screen ease-in duration-200"
       }>
         <div className="flex w-full items-center">
           <div onClick={handleNav} className="cursor-pointer text-3xl">
