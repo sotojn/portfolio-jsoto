@@ -10,6 +10,10 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sora)'],
       },
+      backgroundImage: {
+        'titlePC': "url('../public/Images/TitlePC.jpg')",
+        'titleCode': "url('../public/Images/TitleCode.jpg')",
+      },
     },
   },
   plugins: [],

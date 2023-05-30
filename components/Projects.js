@@ -33,13 +33,6 @@ function projects() {
             centeredSlides={true}
             loop={true}
             slidesPerView={'2'}
-            // coverflowEffect={{
-            //   "rotate": 0,
-            //   "stretch": 0,
-            //   "depth": 100,
-            //   "modifier": 1.5,
-            //   "slideShadows": true
-            // }}
             modules={[Navigation, Pagination, EffectCards ]}
             //pagination={{el:'',clickable:true}}
             //navigation={{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev', clickable:true}}
@@ -67,13 +60,6 @@ function projects() {
             loop={true}
             slidesPerView={'2'}
             centeredSlides={true}
-            // coverflowEffect={{
-            //   "rotate": 0,
-            //   "stretch": 0,
-            //   "depth": 100,
-            //   "modifier": 1.5,
-            //   //"slideShadows": true
-            // }}
             modules={[Navigation, Pagination, EffectCards]}
             //pagination={{el:'',clickable:true}}
             //navigation={{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev', clickable:true}}
