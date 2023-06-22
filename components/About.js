@@ -26,7 +26,7 @@ function About() {
             <h3 className="text-2xl font-medium py-2">A programming legend from Mesa Arizona</h3>
             <p className="text-md py-5 leading-8 text-grey-800"> I am a full stack developer based in Mesa, Arizona. I am passionate about bringing ideas to life on the screen, and I am constantly looking for ways to improve my skills and knowledge.</p>
             <p className="text-md py-5 leading-8 text-grey-800">I am currently working as a freelance software engineer on <a href="https://www.upwork.com/freelancers/~012975d21ca06ed41c?viewMode=1" target="_blank" className="text-teal-600">Upwork</a> where I work on a variety of Full-Stack projects for clients. I am also a graduate of Hack Reactor&apos;s 12 week immersive program!</p>
-            <p className="text-md py-5 leading-8 text-grey-800">When I&apos;m not in front of a computer screen, I&apos;m probably out with friends or family, playing chess, or out trying new things! Also I like causal gaming.</p>
+            <p className="text-md py-5 leading-8 text-grey-800">When I&apos;m not in front of a computer screen, I&apos;m probably out with friends or family, playing chess, or out trying new things! Also I like casual gaming!</p>
           </div>
         </div>
       </div>
